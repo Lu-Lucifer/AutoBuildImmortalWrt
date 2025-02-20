@@ -20,7 +20,7 @@ cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 # 输出调试信息
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始编译..."
 
-
+echo $(ls `$PACKAGES`)
 
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
