@@ -46,6 +46,9 @@ PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 # 增加自定义软件
 #PACKAGES="$PACKAGES luci-app-nikki"
 
+ls -a
+ls $PACKAGES
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
