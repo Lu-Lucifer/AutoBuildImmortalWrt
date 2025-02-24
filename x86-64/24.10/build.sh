@@ -44,9 +44,11 @@ PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
 # 增加自定义软件
-#PACKAGES="$PACKAGES nikki"
-#PACKAGES="$PACKAGES luci-app-nikki"
-#PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
+PACKAGES="$PACKAGES nikki"
+PACKAGES="$PACKAGES luci-app-nikki"
+PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
+
+git clone https://github.com/ffuqiangg/openwrt_apps.git ./package/new/luci-app-nikki
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
